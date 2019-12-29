@@ -2,23 +2,30 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="#">Resume</a></li>
-	        		<li><a href="#">Projects</a></li>
-	        		<li><a href="#">About</a></li>
+			<nav class="navbar">
+	    		<ul class="navbar-nav mr-auto">
+	        		<li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+		        	<li class="nav-item">
+                <a class="nav-link"  href="#">Resume</a>
+              </li>
+	        		<li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+	        		<li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
 	    		</ul>
 			</nav>
 			<div class="container">
 			
 			{{ content }}
 			
-			</div><!-- /.container -->
+			</div>
 			<footer>
 	    		<ul>
 	        		<li><a href="mailto:jamesnrolfe@gmail.com">email</a></li>
