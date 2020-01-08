@@ -17,6 +17,11 @@ html,body {
   background-color: white;
 }
 
+.contact-img {
+  width: 200px;
+  height: 200px;
+}
+
 .nav-a {
   font-size: 1.25em; 
   color: silver;
