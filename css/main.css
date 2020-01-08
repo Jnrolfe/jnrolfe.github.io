@@ -1,18 +1,36 @@
 /* bootstrap css overrides */
-html, body {
+
+html,body {
   height: 100%;
 }
 
-.min-100 {
-    min-height: 100%;
+.flex-fill {
+  flex: 1;
+  overflow-y: auto;
 }
 
-a {
-  color: white;
+.custom-nav {
+  flex: none;
 }
 
-a:hover {
+.content {
+  background-color: white;
+}
+
+.nav-a {
+  font-size: 1.25em; 
+  color: silver;
   text-decoration: none;
-  font-weight: bold;
+}
+
+.nav-a:hover {
   color: white;
+  text-decoration: none;
+  background-color: rgb(19, 157, 68);
+}
+
+.nav-a.active {
+  color: silver;
+  text-decoration: none;
+  background-color: black;
 }
