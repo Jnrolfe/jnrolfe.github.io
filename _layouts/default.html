@@ -9,20 +9,17 @@
 		</head>
 		<body>
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <div class="container-fluid bg-dark h-100 d-flex flex-column">
+      <div class="container-fluid h-100 d-flex flex-column">
         <div class="row d-flex justify-content-center custom-nav">
-          <a href="/" class="p-3 nav-a" id="nav-home">Home</a>
-          <a href="/about" class="p-3 nav-a" id="nav-about">About</a>
-          <a href="/projects" class="p-3 nav-a" id="nav-projects">Projects</a>
-          <a href="/resume" class="p-3 nav-a" id="nav-resume">Resume</a>
-          <a href="/contact" class="p-3 nav-a" id="nav-contact">Contact</a>
+          <a href="/" class="py-2 px-3 nav-a" id="nav-home">Home</a>
+          <a href="/about" class="py-2 px-3 nav-a" id="nav-about">About</a>
+          <a href="/projects" class="py-2 px-3 nav-a" id="nav-projects">Projects</a>
+          <a href="/resume" class="py-2 px-3 nav-a" id="nav-resume">Resume</a>
+          <a href="/contact" class="py-2 px-3 nav-a" id="nav-contact">Contact</a>
         </div>
         
-        <div class="row d-flex flex-fill justify-content-start content py-2">
-          <!-- <div class="col portlet-container portlet-dropzone py-2">-->
-            <div class="container">
-              {{ content }}
-            </div>
+        <div class="row justify-content-start bg-transparent content">
+          {{ content }}
         </div>
         
       </div><!-- end body container -->

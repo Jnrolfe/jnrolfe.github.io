@@ -1,7 +1,17 @@
 /* bootstrap css overrides */
 
+/*
 html,body {
   height: 100%;
+}
+*/
+
+html, body {
+  height: 100%;
+}
+
+.words {
+  justify-content: center;
 }
 
 .flex-fill {
@@ -9,21 +19,57 @@ html,body {
   overflow-y: auto;
 }
 
+.container-fluid {
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);
+}
+
+.white-text {
+  color: white;
+}
+
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+}
+
+i {
+  font-weight: lighter;
+}
+
+.h-85 {
+  height: 85%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
 .custom-nav {
   flex: none;
 }
 
 .content {
-  background-color: white;
+  height: 100%
 }
 
 .contact-img {
+  width: 100px;
+  height: 100px;
+}
+
+.index-img {
+  width: 150px;
+  height: 150px;
+}
+
+.about-img {
   width: 200px;
   height: 200px;
 }
 
 .nav-a {
-  font-size: 1.25em; 
+  font-size: 1.15em; 
   color: silver;
   text-decoration: none;
 }
@@ -31,11 +77,11 @@ html,body {
 .nav-a:hover {
   color: white;
   text-decoration: none;
-  background-color: rgb(19, 157, 68);
+  border-bottom: 3px solid white;
 }
 
 .nav-a.active {
   color: silver;
   text-decoration: none;
-  background-color: black;
+  border-bottom: 3px solid silver;
 }

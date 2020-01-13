@@ -2,174 +2,181 @@
 layout: default
 title: James Rolfe
 ---
-<div class="row py-2">
-  <h3>My Projects</h3>
-</div>
-<div class="row pb-2">
-  <p>A list of my projects with brief descriptions and ways to learn more about them.</p>
-</div>
-
-<div class="row pb-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Swarmbots</h5>
-      <h6 class="text-muted">December 11, 2019</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <a href="#" class="btn btn-success disabled">Read More on Medium</a>
-      <a href="https://github.com/ankitasharma1/swarmbots" class="btn btn-success">Github Repo</a>
+<div class="container flex-fill mb-4 mt-4">
+  <div class="row pb-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Swarmbots</h5>
+        <h6 class="text-muted">December 11, 2019</h6>
+        <p class="card-text text-justify">Project lead for the creation of 3 remote-controlled cars that act as a swarm.
+        Each bot consists of a RaspberryPi 3B+, a camera, 2 wheel driving chasis and motors, and charging
+        circuit. The bots communicate over Bluetooth using pybluez. The Bluetooth communication is used for
+        both anti-collision (via RSSI), leader election through the RAFT protocol, and by the leader bot to
+        receive commands from the user's controller. The camera is used by openCV to recognize the other bots
+        (they each have a design on their back). <br>Upon starting, the
+        bots will calibrate their RSSI then elect a leader amongst themselves. The leader will connect to the
+        users controller and start driving around. The followers will follow the leader without colliding
+        into other followers. If the leader doesn't heartbeat with followers, the followers will elect a new
+        leader and that leader will connect to the users controller. Any bot can be reset and rejoin the
+        swarm as follower at any time.</p>
+        <a href="#" class="btn btn-success disabled">Read More on Medium</a>
+        <a href="https://github.com/ankitasharma1/swarmbots" class="btn btn-success">Github Repo</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Using a Blockchain for Distributed Record Managment</h5>
-      <h6 class="text-muted">December 5, 2019</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <a href="#" class="btn btn-success">Read More on Medium</a>
-      <a href="#" class="btn btn-warning">Request Github Access</a>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Using a Blockchain for Distributed Record Managment</h5>
+        <h6 class="text-muted">December 5, 2019</h6>
+        <p class="card-text text-justify">Architect and developer of infrastructure to secure distributed records. The architecture uses a public blockchain to tie encrypted records to accounts used between multiple entities that do processing on said records. The use of the blockchain ensures that accounts accross the entities are authenticated and tamper-proof. Each instance in which an entity processes on an accounts records is tracked in a tamper-proof manner. <br>The backend and custom public blockchain is written in Python3. Also, we created a demo with the backend where-in the entities are hospitals and the accounts are patients. The demo frontend is written in Flask.</p>
+        <a href="#" class="btn btn-success">Read More on Medium</a>
+        <a href="#" class="btn btn-warning">Request Github Access</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Brown Noser Website Re-build</h5>
-      <h6 class="text-muted">May 11, 2019</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <a href="#" class="btn btn-success">The Brown Noser</a>
-      <a href="https://github.com/kimdahey/nosertheme" class="btn btn-success">Github Repo</a>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Brown Noser Website Re-build</h5>
+        <h6 class="text-muted">May 11, 2019</h6>
+        <p class="card-text text-justify">As part of a Web Design class at Brown University. My team got assigned to re-build the Brown Noser satrical news website. We rebuilt the website and migrated the existing database to a custom ghost publishing platform hosted by Digital Ocean.</p>
+        <a href="#" class="btn btn-success">The Brown Noser</a>
+        <a href="https://github.com/kimdahey/nosertheme" class="btn btn-success">Github Repo</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">PuddleStore</h5>
-      <h6 class="text-muted">May 8, 2019</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <a href="#" class="btn btn-warning">Request Github Access</a>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">PuddleStore</h5>
+        <h6 class="text-muted">May 8, 2019</h6>
+        <p class="card-text text-justify">A distributed, decentralized data storage system using RAFT written
+        in Go using custom Google protobuffs. This was a final project for the Distributed Systems course at
+        Brown University.</p>
+        <a href="#" class="btn btn-warning">Request Github Access</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Password Cracker</h5>
-      <h6 class="text-muted">December 7, 2018</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <a href="#" class="btn btn-warning">Request Github Access</a>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Password Cracker</h5>
+        <h6 class="text-muted">December 7, 2018</h6>
+        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <a href="#" class="btn btn-warning">Request Github Access</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Handheld Gaming PC Prototype</h5>
-      <h6 class="text-muted">May 5, 2018</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <a href="#" class="btn btn-warning">Request Github Access</a>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Handheld Gaming PC Prototype</h5>
+        <h6 class="text-muted">May 5, 2018</h6>
+        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <a href="#" class="btn btn-warning">Request Github Access</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Painter by The Numbers</h5>
-      <h6 class="text-muted">April 20, 2018</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <a href="#" class="btn btn-warning">Request Github Access</a>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Painter by The Numbers</h5>
+        <h6 class="text-muted">April 20, 2018</h6>
+        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <a href="#" class="btn btn-warning">Request Github Access</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">IoT ZigBee Attacks</h5>
-      <h6 class="text-muted">April 25, 2018</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">IoT ZigBee Attacks</h5>
+        <h6 class="text-muted">April 25, 2018</h6>
+        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">RoP Attacks and Demonstrating Computer Security Concepts</h5>
-      <h6 class="text-muted">December 11, 2017</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">RoP Attacks and Demonstrating Computer Security Concepts</h5>
+        <h6 class="text-muted">December 11, 2017</h6>
+        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Network Response Simulator</h5>
-      <h6 class="text-muted">August 3, 2017</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <a href="#" class="btn btn-success">View Website</a>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Network Response Simulator</h5>
+        <h6 class="text-muted">August 3, 2017</h6>
+        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <a href="#" class="btn btn-success">View Website</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Language Development Research</h5>
-      <h6 class="text-muted">July 24, 2017</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Language Development Research</h5>
+        <h6 class="text-muted">July 24, 2017</h6>
+        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Demonstrating Machine Learning Concepts</h5>
-      <h6 class="text-muted">May 7, 2017</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <a href="#" class="btn btn-warning">Request Github Access</a>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Demonstrating Machine Learning Concepts</h5>
+        <h6 class="text-muted">May 7, 2017</h6>
+        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <a href="#" class="btn btn-warning">Request Github Access</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Demonstrating Operating Systems Concepts</h5>
-      <h6 class="text-muted">December 19, 2016</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <a href="#" class="btn btn-warning">Request Github Access</a>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Demonstrating Operating Systems Concepts</h5>
+        <h6 class="text-muted">December 19, 2016</h6>
+        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <a href="#" class="btn btn-warning">Request Github Access</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Demonstrating Data Structures Concepts</h5>
-      <h6 class="text-muted">December 19, 2016</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <a href="#" class="btn btn-warning">Request Github Access</a>
+  <div class="row py-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Demonstrating Data Structures Concepts</h5>
+        <h6 class="text-muted">December 19, 2016</h6>
+        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <a href="#" class="btn btn-warning">Request Github Access</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row py-2">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Chess AI with Tune-able Difficulty</h5>
-      <h6 class="text-muted">November 9, 2015</h6>
-      <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <a href="#" class="btn btn-warning">Request Github Access</a>
+  <div class="row pt-2 px-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Chess AI with Tune-able Difficulty</h5>
+        <h6 class="text-muted">November 9, 2015</h6>
+        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <a href="#" class="btn btn-warning">Request Github Access</a>
+      </div>
     </div>
   </div>
 </div>
