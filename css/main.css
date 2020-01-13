@@ -86,7 +86,9 @@ i {
   border-bottom: 3px solid silver;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
   .nav-a {
     font-size: 1em;
   }
