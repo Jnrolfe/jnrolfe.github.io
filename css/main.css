@@ -85,3 +85,9 @@ i {
   text-decoration: none;
   border-bottom: 3px solid silver;
 }
+
+@media screen and (max-width: 600px) {
+  .nav-a {
+    font-size: 1em;
+  }
+}
