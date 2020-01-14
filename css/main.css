@@ -1,11 +1,4 @@
 /* bootstrap css overrides */
-
-/*
-html,body {
-  height: 100%;
-}
-*/
-
 html, body {
   height: 100%;
 }
@@ -58,8 +51,8 @@ i {
 }
 
 .contact-img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 
 .about-img {

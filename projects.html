@@ -13,12 +13,13 @@ title: James Rolfe
         circuit. The bots communicate over Bluetooth using pybluez. The Bluetooth communication is used for
         both anti-collision (via RSSI), leader election through the RAFT protocol, and by the leader bot to
         receive commands from the user's controller. The camera is used by openCV to recognize the other bots
-        (they each have a design on their back). <br>Upon starting, the
-        bots will calibrate their RSSI then elect a leader amongst themselves. The leader will connect to the
+        (they each have a design on their back). <br><br>
+        Upon first starting, the bots will calibrate their RSSI then elect a leader amongst themselves. The leader will connect to the
         users controller and start driving around. The followers will follow the leader without colliding
         into other followers. If the leader doesn't heartbeat with followers, the followers will elect a new
         leader and that leader will connect to the users controller. Any bot can be reset and rejoin the
-        swarm as follower at any time.</p>
+        swarm as follower at any time.
+        </p>
         <a href="#" class="btn btn-success disabled">Read More on Medium</a>
         <a href="https://github.com/ankitasharma1/swarmbots" class="btn btn-success">Github Repo</a>
       </div>
@@ -30,9 +31,16 @@ title: James Rolfe
       <div class="card-body">
         <h5 class="card-title">Using a Blockchain for Distributed Record Managment</h5>
         <h6 class="text-muted">December 5, 2019</h6>
-        <p class="card-text text-justify">Architect and developer of infrastructure to secure distributed records. The architecture uses a public blockchain to tie encrypted records to accounts used between multiple entities that do processing on said records. The use of the blockchain ensures that accounts accross the entities are authenticated and tamper-proof. Each instance in which an entity processes on an accounts records is tracked in a tamper-proof manner. <br>The backend and custom public blockchain is written in Python3. Also, we created a demo with the backend where-in the entities are hospitals and the accounts are patients. The demo frontend is written in Flask.</p>
-        <a href="#" class="btn btn-success">Read More on Medium</a>
-        <a href="#" class="btn btn-warning">Request Github Access</a>
+        <p class="card-text text-justify">Architect and developer of infrastructure to secure distributed records. 
+        The architecture uses a public blockchain to tie encrypted records to accounts used between multiple 
+        entities that do processing on said records. The use of the blockchain ensures that accounts accross 
+        the entities are authenticated and tamper-proof. Each instance in which an entity processes on an accounts
+        records is tracked in a tamper-proof manner. <br><br>
+        The backend and custom public blockchain is written in Python3. Also, we created a demo with the backend 
+        where-in the entities are hospitals and the accounts are patients. The demo frontend is written in Flask.
+        </p>
+        <a href="#" class="btn btn-success disabled">Read More on Medium</a>
+        <a href="mailto:jamesnrolfe@gmail.com" class="btn btn-warning">Request Github Access</a>
       </div>
     </div>
   </div>
@@ -43,7 +51,7 @@ title: James Rolfe
         <h5 class="card-title">Brown Noser Website Re-build</h5>
         <h6 class="text-muted">May 11, 2019</h6>
         <p class="card-text text-justify">As part of a Web Design class at Brown University. My team got assigned to re-build the Brown Noser satrical news website. We rebuilt the website and migrated the existing database to a custom ghost publishing platform hosted by Digital Ocean.</p>
-        <a href="#" class="btn btn-success">The Brown Noser</a>
+        <a href="#" class="btn btn-success disabled">The Brown Noser</a>
         <a href="https://github.com/kimdahey/nosertheme" class="btn btn-success">Github Repo</a>
       </div>
     </div>
@@ -55,9 +63,10 @@ title: James Rolfe
         <h5 class="card-title">PuddleStore</h5>
         <h6 class="text-muted">May 8, 2019</h6>
         <p class="card-text text-justify">A distributed, decentralized data storage system using RAFT written
-        in Go using custom Google protobuffs. This was a final project for the Distributed Systems course at
-        Brown University.</p>
-        <a href="#" class="btn btn-warning">Request Github Access</a>
+        in Go with custom Google protobuffs. This was a final project for the Distributed Systems course at
+        Brown University.
+        </p>
+        <a href="mailto:jamesnrolfe@gmail.com" class="btn btn-warning">Request Github Access</a>
       </div>
     </div>
   </div>
@@ -67,8 +76,14 @@ title: James Rolfe
       <div class="card-body">
         <h5 class="card-title">Password Cracker</h5>
         <h6 class="text-muted">December 7, 2018</h6>
-        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        <a href="#" class="btn btn-warning">Request Github Access</a>
+        <p class="card-text">Written in Python3, this password cracker uses longest common substring approximation
+        to build a k-NN model on the RockYou and Yahoo! password sets and produce guesses with an
+        accuracy equivalent to John the Ripper. This password cracker can also use seed words to rank the clusters
+        and slightly improve accuracy. It was completed as a final project for CSCI2915E: Advanced Cybersecurity Seminar
+        at Brown University.
+        </p>
+        <a href="mailto:jamesnrolfe@gmail.com" class="btn btn-warning">Request Github Access</a>
+        <a href="mailto:jamesnrolfe@gmail.com" class="btn btn-warning">Request Presentation</a>
       </div>
     </div>
   </div>
@@ -78,8 +93,11 @@ title: James Rolfe
       <div class="card-body">
         <h5 class="card-title">Handheld Gaming PC Prototype</h5>
         <h6 class="text-muted">May 5, 2018</h6>
-        <p class="card-text">About the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        <a href="#" class="btn btn-warning">Request Github Access</a>
+        <p class="card-text">For my senior capstone, my group and I built a handheld gaming system using a 3D printed shell,
+        a screen and buttons from adafruit, and a RaspberryPi 3B+. The system runs a lightwieght RaspbianOS to bootstrap the 
+        Nvidia moonlight protocol.   
+        </p>
+        <a href="mailto:jamesnrolfe@gmail.com" class="btn btn-warning">Request Github Access</a>
       </div>
     </div>
   </div>
