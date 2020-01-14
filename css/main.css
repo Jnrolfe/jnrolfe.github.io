@@ -33,6 +33,10 @@ a.custom-card:hover {
   color: inherit;
 }
 
+.custom-card:hover {
+  background-color: lightgray;
+}
+
 i {
   font-weight: lighter;
 }
@@ -54,13 +58,8 @@ i {
 }
 
 .contact-img {
-  width: 100px;
-  height: 100px;
-}
-
-.index-img {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
 }
 
 .about-img {
@@ -70,20 +69,25 @@ i {
 
 .nav-a {
   font-size: 1.15em; 
-  color: silver;
+  color: white;
   text-decoration: none;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
 }
 
 .nav-a:hover {
-  color: white;
-  text-decoration: none;
-  border-bottom: 3px solid white;
-}
-
-.nav-a.active {
   color: silver;
   text-decoration: none;
   border-bottom: 3px solid silver;
+}
+
+.nav-a.active {
+  color: gray;
+  text-decoration: none;
+  border-bottom: 3px solid gray;
 }
 
 @media only screen 
