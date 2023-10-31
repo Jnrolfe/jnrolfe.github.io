@@ -1,0 +1,10 @@
+.App-wrapper {
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 50%, rgba(9,9,121,1) 75%, rgba(0,0,0,1) 100%);
+  color: white;
+  height: 100%;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
