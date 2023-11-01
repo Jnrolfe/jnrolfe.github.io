@@ -15,7 +15,7 @@
 }
 
 /* Use a media query to apply the class only on mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1170px) {
   .hide-on-mobile {
     display: none;
   }
