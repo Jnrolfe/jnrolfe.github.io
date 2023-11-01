@@ -142,6 +142,48 @@ function Work() {
                 <TimelineItem>
                     <TimelineOppositeContent style={{ maxWidth: "1px", paddingLeft: '0px', paddingRight: '0px' }} />
                     <TimelineSeparator>
+                        <TimelineDot>
+                            <Avatar
+                                alt="GREYRALLY"
+                                src="/greyrally.png"
+                                sx={{ width: 20, height: 20, padding: '2px' }}
+                            />
+                        </TimelineDot>
+                        <TimelineConnector />
+                    </TimelineSeparator>
+                    <TimelineContent>
+                        <Typography variant='h6' component='div'>
+                            Co-Founder & Lead Developer
+                        </Typography>
+                        <Box sx={{display: 'flex', alignItems: 'center', marginTop: '0.5rem', marginBottom: '0.5rem'}}>
+                            <DateRangeIcon />
+                            <Typography sx={{marginLeft: '0.5rem', marginRight: '1rem' }} variant='subtitle2' component='div'>
+                                March 2017 to May 2020
+                            </Typography>
+                            <LocationOnIcon />
+                            <Typography sx={{marginLeft: '0.5rem' }} variant='subtitle2' component='div'>
+                                Sunnyvale, CA
+                            </Typography>
+                        </Box>
+                        <Box sx={{display: 'flex', alignItems: 'center', marginBottom: '0.5rem'}}>
+                            <AccountBalanceIcon />
+                            <Typography sx={{marginLeft: '0.5rem', marginRight: '1rem'}} variant='subtitle2' component='div'>
+                                GREYRALLY
+                            </Typography>
+                            <CodeIcon />
+                            <Typography sx={{marginLeft: '0.5rem'}} variant='subtitle2' component='div'>
+                                <Chip sx={{color: "white", marginRight: '0.25rem'}} label="NodeJS" />
+                                <Chip sx={{color: "white"}} label="Javascript" />
+                            </Typography>
+                        </Box>
+                        <Typography variant='body1' component='div'>
+                            Managed multiple contractors through the development of a web-based marketplace to anonymously auction, sell, buy, and rate zero-day exploits.
+                        </Typography>
+                    </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                    <TimelineOppositeContent style={{ maxWidth: "1px", paddingLeft: '0px', paddingRight: '0px' }} />
+                    <TimelineSeparator>
                     <TimelineDot>
                         <Avatar 
                             alt="KU"
@@ -153,12 +195,12 @@ function Work() {
                     </TimelineSeparator>
                     <TimelineContent>
                         <Typography variant='h6' component='div'>
-                            Research Assistant
+                            Researcher
                         </Typography>
                         <Box sx={{display: 'flex', alignItems: 'center', marginTop: '0.5rem', marginBottom: '0.5rem'}}>
                             <DateRangeIcon />
                             <Typography sx={{marginLeft: '0.5rem', marginRight: '1rem' }} variant='subtitle2' component='div'>
-                                Summer 2017
+                                May 2015 to March 2018
                             </Typography>
                             <LocationOnIcon />
                             <Typography sx={{marginLeft: '0.5rem' }} variant='subtitle2' component='div'>

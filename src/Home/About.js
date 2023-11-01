@@ -4,7 +4,6 @@ import Typography from '@mui/material/Typography';
 import { Avatar, Chip } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
@@ -44,17 +43,14 @@ function About() {
                             <IconButton href="mailto:jamesnrolfe@gmail.com" sx={{marginRight: "0.5rem"}} variant="contained" color="primary">
                                 <EmailIcon fontSize='large' sx={{color: "white"}}/>
                             </IconButton>
-                            <IconButton href="https://www.linkedin.com/in/rolfejames" sx={{marginRight: "0.5rem"}} variant="contained" color="primary">
+                            <IconButton href="https://www.linkedin.com/in/rolfejames" sx={{marginRight: "auto"}} variant="contained" color="primary">
                                 <LinkedInIcon fontSize='large' sx={{color: "white"}}/>
-                            </IconButton>
-                            <IconButton sx={{marginRight: "auto"}} variant="contained" color="primary">
-                                <TwitterIcon fontSize='large' sx={{color: "white"}}/>
                             </IconButton>
                         </Box>
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item sm={4} sx={{display: {md: "flex", sm: "none"}}}>
+            <Grid item sm={4} sx={{display: {lg: "flex", md: "none", sm: "none"}}}>
                 <Box 
                     className='centered' 
                     sx={{

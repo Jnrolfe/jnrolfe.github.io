@@ -79,7 +79,7 @@ function ProjectCard({projectName, finishedDate, description, actionButtons, ins
                 ) : (
                     <CardMedia
                         component="img"
-                        sx={{ width: 150, marginTop: "0.5rem", marginBottom: "auto", marginRight: "1rem", borderRadius: 1 }}
+                        sx={{ display: {lg: "flex", md: "none", sm: "none"}, width: 150, marginTop: "0.5rem", marginBottom: "auto", marginRight: "1rem", borderRadius: 1 }}
                         image="/binary_code.jpg"
                         alt="project image"
                     />
