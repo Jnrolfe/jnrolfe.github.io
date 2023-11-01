@@ -24,6 +24,11 @@ function ResponsiveAppBar({ pages }) {
     setAnchorElNav(null);
   };
 
+  const handleComingSoonClick = () => {
+    alert("Coming Soon.");
+    setAnchorElNav(null);
+  }
+
   return (
     <AppBar style={{ background: `rgb(0, 0, 0, 1)` }} position="fixed">
       <Container maxWidth="100%">
@@ -69,7 +74,7 @@ function ResponsiveAppBar({ pages }) {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={handleComingSoonClick}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -87,7 +92,7 @@ function ResponsiveAppBar({ pages }) {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={handleComingSoonClick}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}

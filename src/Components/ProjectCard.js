@@ -71,6 +71,7 @@ function ProjectCard({projectName, finishedDate, description, actionButtons, ins
                 )}
                 {projectImagePath ? (
                     <CardMedia
+                        className="hide-on-mobile"
                         component="img"
                         sx={{ width: 150, marginTop: "0.5rem", marginBottom: "auto", marginRight: "1rem" }}
                         image={projectImagePath}
@@ -78,8 +79,9 @@ function ProjectCard({projectName, finishedDate, description, actionButtons, ins
                     />
                 ) : (
                     <CardMedia
+                        className="hide-on-mobile"
                         component="img"
-                        sx={{ display: {lg: "flex", md: "none", sm: "none"}, width: 150, marginTop: "0.5rem", marginBottom: "auto", marginRight: "1rem", borderRadius: 1 }}
+                        sx={{ display: {lg: "flex", md: "none", sm: "none", xs: "none"}, width: 150, marginTop: "0.5rem", marginBottom: "auto", marginRight: "1rem", borderRadius: 1 }}
                         image="/binary_code.jpg"
                         alt="project image"
                     />

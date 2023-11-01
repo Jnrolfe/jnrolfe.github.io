@@ -50,7 +50,7 @@ function About() {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item sm={4} sx={{display: {lg: "flex", md: "none", sm: "none"}}}>
+            <Grid item sm={4} sx={{display: {lg: "flex", md: "none", sm: "none", xs: "none"}}}>
                 <Box 
                     className='centered' 
                     sx={{

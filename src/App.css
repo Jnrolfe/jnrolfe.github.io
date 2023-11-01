@@ -8,3 +8,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Define a class to hide content */
+.hide-on-mobile {
+  display: flex;
+}
+
+/* Use a media query to apply the class only on mobile screens */
+@media screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
